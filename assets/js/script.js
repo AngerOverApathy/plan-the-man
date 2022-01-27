@@ -24,7 +24,11 @@ var calendar = setInterval(function() {
   }, 100);
 
 
-//display date at top of calendar
+//clear calendar
+$("#clearCal").on("click", function(){
+    localStorage.clear();
+    initPage()
+  });
 
 //time blocks
 
